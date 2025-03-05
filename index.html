@@ -20,8 +20,8 @@
   
   #cup-container {
     position: absolute;
-    top: 175px;
-    left: 85px;
+    top: 165px;
+    left: 115px;
     
     width: 150px;
     height: 100px;
@@ -135,7 +135,7 @@
     height: 16px;
     
     border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
-    border: .5px solid hsl(0, 0%, 74%);;
+    border: 2px solid hsl(0, 0%, 74%);;
     
     position: absolute;
     left: 60px;
@@ -176,7 +176,7 @@
     
     position: absolute;
     top: 21px;
-    left: 12px;
+    left: 16px;
     
   }
   
@@ -185,9 +185,7 @@
   #can-container {
     position: absolute;
     top: 250px;
-    left: 50px;
-    
-    background-color: rgba(255, 255, 0, 0.17);
+    left: 80px;
     
     width: 150px;
     height: 250px;  
@@ -295,13 +293,11 @@
   #kettle-container {
     position: absolute;
     
-    background-color: hsla(39, 100%, 50%, 0.26);
-    
-    width: 250px;
+    width: 200px;
     height: 350px;
     
     top: 150px;
-    left: 196px;
+    left: 226px;
   }
   
   .kettle-top-circ{
@@ -314,7 +310,7 @@
     border: 3px solid grey;
     
     position: absolute;
-    left: 100px;
+    left: 75px;
   }
   
   .kettle-top-circ2{
@@ -325,8 +321,8 @@
     border-radius: 50% 50% 50% 50% / 49% 51% 49% 51%;
     
     position: absolute;
-    left: 109px;
-    top: 38px;
+    left: 84px;
+    top: 36px;
   }
   
   #kettle-top-base {
@@ -338,7 +334,7 @@
     
     position: absolute;
     top: 8px;
-    left: 100px;
+    left: 75px;
   }
   
   #kettle-lid {
@@ -348,27 +344,114 @@
     box-sizing: border-box;
     border: 3px solid hsl(39, 100%, 36%);
     
-    width: 250px;
+    width: 200px;
     height: 62px;
     
     position: absolute;
-    top: 45px;
+    top: 43px;
   }
   
   #kettle-base {
     background-color: orange;
     box-sizing: border-box;
-    border: 3px solid hsl(39, 100%, 36%);
     
-    clip-path: polygon(0 0, 100% 0, 75% 100%, 25% 100%);
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
     
-    width: 250px;
+    width: 200px;
     height: 191px;
     
     position: absolute;
     top: 72px;
   }
   
+  #kettle-base-circ {
+    background-color: orange;
+    
+    border-radius: 50% 50% 50% 50% / 49% 51% 49% 51%;
+    box-sizing: border-box;
+    border: 3px solid hsl(39, 100%, 36%);
+    
+    width: 161px;
+    height: 50px;
+    
+    position: absolute;
+    top: 237px;
+    left: 20px;
+  }
+  
+  #kettle-bottom-circ {
+    background-color: gray;
+    
+    border-radius: 50% 50% 50% 50% / 49% 51% 49% 51%;
+    border: 3px solid darkgray;
+    box-sizing: border-box;
+    
+    width: 181px;
+    height: 60px;
+    
+    position: absolute;
+    top: 250px;
+    left: 10px;
+  }
+  
+  #kettle-bottom-circ2 {
+    background-color: gray;
+    
+    border-radius: 50% 50% 50% 50% / 49% 51% 49% 51%;
+    border: 3px solid darkgray;
+    box-sizing: border-box;
+    
+    width: 200px;
+    height: 30px;
+    
+    position: absolute;
+    top: 329px;
+  }
+  
+  #kettle-bottom-base {
+    background-color: gray;
+    
+    clip-path: polygon(5% 0, 95% 0, 100% 100%, 0 100%);
+    
+    width: 200px;
+    height: 66px;
+    
+    position: absolute;
+    top: 277px;
+  }
+  
+  .kettle-handle-top{
+    background-color: black;
+    clip-path: polygon(0 0, 100% 29%, 100% 100%, 0 100%);
+    
+    width: 25px;
+    height: 25px;
+    
+    position: absolute;
+    top: 92px;
+    left: 20px;
+  }
+  
+  .kettle-handle-joint {
+    background-color: black;
+    border-radius: 50%;
+    
+    width: 25px;
+    height: 35px;
+    
+    position: absolute;
+  }
+  
+  .kettle-handle-rect{
+    background-color: black;
+    
+    width: 25px;
+    height: 110px;
+    
+    position: absolute;
+    top: 119px;
+    left: 3px;
+  }
 
 </style>
 
@@ -381,7 +464,7 @@
     <div id="can-bottom"></div>
     <div id="can-base">
       <h1 style="top:8px;">C</h1>
-      <h1 style="top:48px;">B</h1>
+      <h1 style="top:48px;">BU</h1>
     </div>
     <div id="can-base2"></div>
     <div id="can-top-curve"></div>
@@ -457,10 +540,22 @@
     <div id="kettle-top-base"></div>
     <div class="kettle-top-circ"></div>
     
+    <div id="kettle-bottom-circ"></div>
+    <div id="kettle-bottom-circ2"></div>
+    <div id="kettle-bottom-base"></div>
+    
+    <div id="kettle-base-circ"></div>
     <div id="kettle-base"></div>
+    
+    <div class="kettle-handle-top"></div>
+    <div class="kettle-handle-joint" style="height:19px; top:92px; left:11px;"></div>
+    <div class="kettle-handle-joint" style="height:19px; top:96px; left:7px;"></div>
+    <div class="kettle-handle-joint" style="height:19px; top:101px; left:5px;"></div>
+    <div class="kettle-handle-joint" style="height:19px; top:107px; left:3px;"></div>
+   
+    <div class="kettle-handle-rect"></div>
+    <div class="kettle-handle-joint" style="height:19px; top:220px; left:3px;"></div>
     
     <div id="kettle-lid"></div>
     <div class="kettle-top-circ2"></div>
-    
-  </div>
 </div>
