@@ -18,28 +18,189 @@
     background-color: hsl(240, 74%, 74%);
   }
   
-  .cup-stripe {
+  #cup-container {
     position: absolute;
+    top: 175px;
+    left: 85px;
     
-    top: 10px;
-    border-radius: 50% 50% 50% 50% / 18% 18% 18% 18%;
+    width: 150px;
+    height: 100px;
+  }
+  
+  .cup-lip {
     background-color: white;
-    
     width: 100px;
-    height: 110px;
+    height: 16px;
+    
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    border: .5px solid hsl(0, 0%, 74%);
+    
+    position: absolute;
+    left: 50px;
   }
   
   .cup-hole {
     background-color: hsl(0, 0%, 74%);
-    width: 89px;
-    height: 28px;
+    width: 90px;
+    height: 10px;
     
     border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
     
-    position: relative;
-    top: 3px;
+    position: absolute;
+    top: 2px;
     left: 5px;
+  }
+  
+  .cup-stripe-rect {
+    width: 100px;
+    height: 16px;
     
+    position: absolute;
+    left: 50px;
+  }
+  
+  .cup-stripe-circ {
+    width: 100px;
+    height: 16px;
+    
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    
+    position: absolute;
+    left: 50px;
+  }
+  
+  #str-rect1 {
+    background-color: blue;
+    top: 8px;
+  }
+  
+  #str-circ1 {
+    background-color: blue;
+    top: 16px;
+  }
+  
+  #str-rect2 {
+    background-color: white;
+    top: 23px;
+  }
+  
+  #str-circ2 {
+    background-color: white;
+    top: 30px;
+  }
+  
+  #str-rect3 {
+    background-color: blue;
+    top: 39px;
+  }
+  
+  #str-circ3 {
+    background-color: blue;
+    top: 46px;
+  }
+  
+  #str-rect4 {
+    background-color: white;
+    top: 55px;
+  }
+  
+  #str-circ4 {
+    background-color: white;
+    top: 62px;
+  }
+  
+  #str-rect5 {
+    background-color: blue;
+    top: 71px;
+  }
+  
+  #str-circ5 {
+    background-color: blue;
+    top: 78px;
+  }
+  
+  .cup-bottom-rect {
+    background-color: white;
+    width: 90px;
+    height: 16px;
+    
+    position: absolute;
+    left: 60px;
+    top: 80px;
+  }
+  
+  .cup-bottom-circ {
+    background-color: white;
+    width: 90px;
+    height: 16px;
+    
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    border: .5px solid hsl(0, 0%, 74%);;
+    
+    position: absolute;
+    left: 60px;
+    top: 87px;
+  }
+  
+  #flag-triangle {
+    background-color: red;
+    clip-path: polygon(0 0, 0% 100%, 81% 48%);
+    
+    position: absolute;
+    left: 50px;
+    top: 8px;
+    
+    height: 80px;
+    width: 60px;
+  }
+  
+  #flag-star {
+    background-color: white;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    
+    position: absolute;
+    top: 30px;
+    left: 8px;
+    
+    width: 20px;
+    height: 20px;
+  }
+  
+  #cup-handle{
+    box-sizing: border-box;
+    border: 10px solid white;
+    
+    border-radius: 50% 50% 50% 50% / 49% 51% 49% 51%; 
+    width: 45px;
+    height: 54px;
+    
+    position: absolute;
+    top: 21px;
+    left: 12px;
+    
+  }
+  
+  #can-container {
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    
+    background-color: yellow;
+    
+    width: 200px;
+    height: 250px;  
+  }
+  
+  #kettle-container {
+    position: absolute;
+    
+    background-color: orange;
+    
+    width: 250px;
+    height: 350px;
+    
+    top: 150px;
+    left: 200px;
   }
   
 
@@ -48,8 +209,47 @@
 
 <div class="frame">
 	<!-- ur HTML code goes here -->  
+
   
-  <div class="cup-stripe">
-    <div class="cup-hole"></div>
+  <div id="can-container">
+    
+  </div>
+  
+  <div id="cup-container">
+    <div class="cup-bottom-circ"></div>
+    <div class="cup-bottom-rect"></div>
+    
+    <div id="str-rect5" class="cup-stripe-rect"></div>
+    <div id="str-circ5" class="cup-stripe-circ"></div>
+    
+    <div id="str-rect4" class="cup-stripe-rect"></div>
+    <div id="str-circ4" class="cup-stripe-circ"></div>
+    
+    <div id="str-rect3" class="cup-stripe-rect"></div>
+    <div id="str-circ3" class="cup-stripe-circ"></div>
+    
+    <div id="str-rect2" class="cup-stripe-rect"></div>
+    <div id="str-circ2" class="cup-stripe-circ"></div>
+    
+    <div id="str-rect1" class="cup-stripe-rect"></div>
+    <div id="str-circ1" class="cup-stripe-circ"></div>
+    
+    <div id="cup-handle">
+      
+    </div>
+    
+    <div id="flag-triangle">
+      <div id="flag-star"></div>
+    </div>
+    
+    <div class="cup-lip">
+      <div class="cup-hole">
+      </div>
+    </div>
+    
+  </div>
+  
+  <div id="kettle-container">
+    
   </div>
 </div>
